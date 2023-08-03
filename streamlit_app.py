@@ -1,4 +1,9 @@
+
 import streamlit
+import pandas
+import requests
+import snowflake.connector
+from urllib.error import URLError
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
